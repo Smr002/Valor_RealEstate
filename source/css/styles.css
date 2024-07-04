@@ -280,7 +280,7 @@ header {
     background-color: #555;
 }
 
-/* Media Queries for Responsivity */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
