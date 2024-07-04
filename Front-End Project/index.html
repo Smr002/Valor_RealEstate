@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #555555;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Main Section Styles */
+        .main-section {
+            padding: 50px 0;
+        }
+
+        .main-section .text {
+            font-size: 35px;
+            color: rgb(23, 99, 23);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .main-section .btn-apply {
+            padding: 20px 40px;
+            font-size: 24px;
+        }
+
+        /* Agent Section Styles */
+        .agent-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .agent-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .agent-section .agent-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .agent-section .agent-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .agent-section .agent-card h4 {
+            margin-bottom: 10px;
+        }
+
+        .agent-section .agent-card p {
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #064E03;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 20px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #f1c40f;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer-bottom p {
+            margin: 5px 0;
+        }
+
+        .footer-bottom a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Responsivity */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Section -->
+    <div class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <p class="text">Become part of our ever growing agency and conquer the estate market.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" class="btn btn-outline-success btn-lg px-12 me-sm-6 fw-bold btn-apply">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agent Section -->
+    <div class="agent-section">
+        <div class="container">
+            <h2>Meet Our Agents</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="agent-card">
+                        <img src="https://media.istockphoto.com/id/1367391515/photo/portrait-of-successful-businessman.jpg?s=612x612&w=0&k=20&c=COBjoH3I-mJcim_w8frbEfhFHW9pEvZf4FV_jjby3xo=" alt="Agent 1">
+                        <h4>John Doe</h4>
+                        <p>Valor Estate gives you the best estate and properties for your better estate.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="agent-card">
+                        <img src="https://img.freepik.com/premium-photo/young-asian-businesswoman-real-estate-agent-holding-house-samples-mortgage-looking-camera_37714-1623.jpg" alt="Agent 2">
+                        <h4>Emily Smith</h4>
+                        <p>The best real estate firm for the best and trust worthy actions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="agent-card">
+                        <img src="https://blackrealestateagents.com/wp-content/uploads/2019/11/black-professional-realtor.jpg" alt="Agent 3">
+                        <h4>Tyrone Jones</h4>
+                        <p>Valor Estate has presented me with the best opportunities for competing with the market.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="images/valor estate white logo.png" alt="Your Logo" style="max-width: 150px;">
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                <p>+1(123)-456-7890</p>
+                <p>+1(123)-456-7890</p>
+                <p>info@mydomain.com</p>
+            </div>
+            <div class="footer-section sources">
+                <h3>Sources</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <div class="social-icons"> 
+                    <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                    <a href="#"><i class="fab fa-twitter"></i></a> 
+                    <a href="#"><i class="fab fa-instagram"></i></a> 
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024.</p>
+        </div>
+    </footer>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
