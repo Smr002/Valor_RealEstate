@@ -17,6 +17,28 @@ body, html {
     background-position: center;
     animation: carousel 6s infinite;
 }
+.background-about{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../image/aboutImg.jpg');
+   
+}
+
+.background-home{
+    background:#e4e4e4;
+    color: #555555;
+    overflow: hidden;
+}
+#customer{
+    background-color: #fff;
+    overflow: hidden;
+}
 
 @keyframes carousel {
     0% { background-image: url('../image/image1.jpg'); }
@@ -280,6 +302,126 @@ header {
     background-color: #555;
 }
 
+.banner{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.banner a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.innerBanner {
+    font-size: 1.2em;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 128, 128, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about{
+    background-color: #fff;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.content {
+    flex: 1 1 50%;
+}
+
+.features {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.feature .icon {
+    flex: 0 0 50px;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer; 
+}
+
+
+.feature .icon:hover {
+    background-color: #e0e0e0; 
+    animation: popUp 0.3s ease; 
+}
+
+
+.feature .text {
+    flex: 1;
+}
+
+.feature .text h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+
+
+.image {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.image img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
 
 @media (max-width: 768px) {
     header {

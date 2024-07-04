@@ -1,0 +1,164 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #555555;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Main Section Styles */
+.main-section {
+    padding: 50px 0;
+    background-color: #f0efef;
+    overflow: hidden;
+}
+
+.main-section .text {
+    font-size: 35px;
+    color: rgb(23, 99, 23);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-section .btn-apply {
+    padding: 20px 40px;
+    font-size: 24px;
+}
+
+/* Agent Section Styles */
+.agent-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.agent-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.agent-section .agent-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.agent-section .agent-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.agent-section .agent-card h4 {
+    margin-bottom: 10px;
+}
+
+.agent-section .agent-card p {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #064E03;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #f1c40f;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f1c40f;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsivity */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}

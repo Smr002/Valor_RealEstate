@@ -1,0 +1,46 @@
+.properties{
+    background-color: #fff;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.card{
+    text-align: center;
+}
+
+
+
+.svg{
+    padding-bottom: 10px;
+    margin-right: 8px;
+}
+a.card-link{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+a.card-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #005555;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+a.card-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.card-text{
+    color: #00000080;
+}
+.row{
+    text-align: left;
+}
+.pb-2{
+    padding-top: 20px;
+}
