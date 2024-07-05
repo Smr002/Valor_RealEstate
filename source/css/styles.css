@@ -621,6 +621,7 @@ a.card-link:hover::after {
     background-color: #05382e;
 }
 
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
