@@ -112,20 +112,75 @@ header {
     font-size: 14px;
 }
 
-.agent{
-    background-color: rgb(247, 244, 244);
-}
-
-.real-estate-agent{
+.real-estate-agent {
     border: 2px solid #064f45;
     padding: 20px;
     border-radius: 10px; 
     max-width: 400px;
     margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
 }
+
 
 .agent-name{
     font-size: 36px;
+}
+
+.carousel-container {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.carousel-inner img {
+    width: 300px;
+    height: 275px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease-in-out;
+}
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.property-details {
+    margin: 70px;
+    text-align: center;
+}
+
+.property-details table {
+    width: 85%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-left: 8%;
+}
+
+.property-details td, .property-details th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.property-details th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.property-details td:first-child {
+    width: 40%;
+    font-weight: bold;
+}
+
+.property-details td:last-child {
+    width: 60%;
 }
 
 @media (max-width: 768px) {

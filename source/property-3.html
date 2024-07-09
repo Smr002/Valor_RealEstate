@@ -66,11 +66,111 @@
                 
                   Located in a bustling neighborhood with easy access to shops, restaurants, and entertainment, 4221 California Ave. 20BC .</p>
             </div>
-            <div class="col-md-5 order-md-1">
-              <img src="./image/third property.jpg" height="300" width="400" alt="California">
+            <section class="carousel-container">
+                <div id="propertyCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/1-property.jpg" class="d-block w-100" alt="Property Image 1" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/second property.jpg" class="d-block w-100" alt="Property Image 2" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/property-9.jpeg" class="d-block w-100" alt="Property Image 3" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="" id="modalImage" class="img-fluid" alt="Property Image">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
     </div>
+    </section>
+    <section class="property-details">
+
+        <table>
+
+            <tr>
+                <td><img src="./image/svg/area-svgrepo-com.svg" alt="gross area" style="width: 2em; height: 2em;">
+                    GROSS AREA:</td>
+                <td>165 m2</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./image/svg/area-svgrepo-com.svg" alt="gross area" style="width: 2em; height: 2em;">
+                    Interior Area:</td>
+                <td>97 m2</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./image/svg/bedroom-hotel-svgrepo-com.svg" alt="bedroom" style="width: 2em; height: 2em;">
+                    Bedrooms:</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./image/svg/bathroom-svgrepo-com.svg" alt="bathroom" style="width: 2em; height: 2em;">
+                    Baths:</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./image/svg/floor-plan-svgrepo-com.svg" alt="Floor" style="width: 2em; height: 2em;">
+                    Floor:</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./image/svg/information-circle-svgrepo-com.svg" alt="type" style="width: 2em; height: 2em;">
+                    Type:</td>
+                <td>Apartment</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./image/svg/information-circle-svgrepo-com.svg" alt="type" style="width: 2em; height: 2em;">
+                    Status:</td>
+                <td>Used</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./image/svg/information-circle-svgrepo-com.svg" alt="type" style="width: 2em; height: 2em;">
+                    Availability:</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./image/svg/document-svgrepo-com.svg" alt="type" style="width: 2em; height: 2em;">
+                    Documentation:</td>
+                <td>Has Certificate</td>
+            </tr>
+        </table>
+
     </section>
 
     <section class="agent" >

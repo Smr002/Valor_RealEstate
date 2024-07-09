@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Application Form</title>
+    <link rel="stylesheet" href="css/applyStyle.css">
+    <link rel="icon" type="image/png" href="..\source\image\icon2.png">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <h1>Recruitment Application Form</h1>
+            
+            <label for="fullName">Full Name*</label>
+            <div class="fullName">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            </div>
+            
+            <label for="email">E-Mail*</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            
+            <label for="contactNumber">Contact Number*</label>
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="+1234567890" required>
+            
+            <label for="address">Address</label>
+            <input type="text" id="streetAddress" name="streetAddress" placeholder="Street Address">
+            <div class="address-details">
+                <input type="text" id="city" name="city" placeholder="City">
+                <input type="text" id="state" name="state" placeholder="State">
+                <input type="text" id="postalCode" name="postalCode" placeholder="Postal Code">
+                <select id="country" name="country">
+                    <option value="" selected disabled>Country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+              
+                </select>
+            </div>
+            
+            <label for="position">What position are you applying for?</label>
+            <select id="position" name="position" required>
+                <option value="" selected disabled>Please Select</option>
+                <option value="Position 1">Position 1</option>
+                <option value="Position 2">Position 2</option>
+               
+            </select>
+            
+            <label for="startDate">Available start date*</label>
+            <input type="date" id="startDate" name="startDate" required>
+            
+            <label for="employmentStatus">What is your current employment status?*</label>
+            <div class="employmentStatus">
+                <input type="radio" id="employed" name="employmentStatus" value="Employed" required>
+                <label for="employed">Employed</label>
+                <input type="radio" id="unemployed" name="employmentStatus" value="Unemployed">
+                <label for="unemployed">Unemployed</label>
+                <input type="radio" id="selfEmployed" name="employmentStatus" value="SelfEmployed">
+                <label for="selfEmployed">Self-Employed</label>
+                <input type="radio" id="student" name="employmentStatus" value="Student">
+                <label for="student">Student</label>
+                <input type="radio" id="other" name="employmentStatus" value="Other">
+                <label for="other">Other</label>
+            </div>
+            
+            <label for="resume">Upload Your Resume</label>
+            <input type="file" id="resume" name="resume" accept=".doc, .docx, .pdf" required>
+            
+            <label for="notes">Notes, Questions and Suggestions</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Enter your message here..."></textarea>
+            <div class="button-submit">
+                <label>Submit</label>
+            </div>
+         
+            <br><br>
+            <div class="button-cancel">
+               <label><a href="../source/index.html">Cancel</a></label>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

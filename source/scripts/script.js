@@ -26,6 +26,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var myCarousel = document.querySelector('#propertyCarousel');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 1500, 
+        ride: 'carousel'
+    });
+    var imageModal = document.getElementById('imageModal');
+    var modalImage = document.getElementById('modalImage');
+
+    imageModal.addEventListener('show.bs.modal', function(event) {
+        var button = event.relatedTarget;
+        var imageSrc = button.getAttribute('src');
+        modalImage.src = imageSrc;
+    });
+});
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -53,7 +68,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const logo = document.querySelector('.footer-section.logo img');
     if (logo) {
         logo.addEventListener('click', () => {
-            alert('You clicked the logo!');
+            window.location.href = "../source/index.html";
+
+        });
+    }
+
+    const logo1 = document.querySelector('.logo img');
+    if (logo1) {
+        logo1.addEventListener('click', () => {
+            window.location.href = "../source/index.html";
+
         });
     }
 
