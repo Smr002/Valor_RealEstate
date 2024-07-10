@@ -113,6 +113,38 @@ header {
     font-size: 14px;
 }
 
+/* Stilimi i tabeles*/
+.property-details {
+    margin: 55px;
+    
+}
+
+.property-details table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.property-details td, .property-details th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.property-details th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.property-details td:first-child {
+    width: 40%;
+    font-weight: bold;
+}
+
+.property-details td:last-child {
+    width: 60%;
+}
+
 .agent{
     background-color: rgb(247, 244, 244);
 }

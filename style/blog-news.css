@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    background: lightgray;
 }
 
 header {
@@ -111,6 +112,10 @@ header {
 
 .lead{
     font-size: 14px;
+}
+
+iframe{
+    float: right;
 }
 
 .agent{
@@ -281,7 +286,7 @@ footer {
 }
 
 .news{
-    margin: 20px;
+    margin: 2% 15% 2% 15%;
 }
 
 .news p{
@@ -308,6 +313,11 @@ footer {
     }
 
     .blog-news-img{
+        width: 100%;
+        height: auto;
+    }
+
+    iframe{
         width: 100%;
         height: auto;
     }
