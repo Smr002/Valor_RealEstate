@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f5f5f5;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+    background: #076d03;
+    transition: width 0.3s;
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.sidebar .logo {
+    height: 60px;
+    background: url('dashboard images/valor estate white logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.sidebar .menu li {
+    margin-bottom: 20px;
+}
+
+.sidebar .menu li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar .menu li a:hover,
+.sidebar .menu li.active a {
+    background: #ad7d05;
+}
+
+.sidebar .menu li a i {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.sidebar .menu li a span {
+    display: none;
+    font-size: 16px;
+}
+
+.sidebar:hover .menu li a span {
+    display: inline;
+}
+
+.main--content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    transition: margin-left 0.5s;
+}
+
+.sidebar:hover ~ .main--content {
+    margin-left: 250px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header--title span {
+    color: #064e03;
+    font-size: 10px;
+}
+
+.header--title h2 {
+    color: #064e03;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+}
+
+.user--info .search--box {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.user--info .search--box i {
+    font-size: 18px;
+    color: #064e03;
+}
+
+.user--info .search--box input {
+    border: none;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+    width: 300px;
+    font-size: 16px;
+}
+
+.user--info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.card-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main--title {
+    color: #064e03;
+    margin-bottom: 20px;
+}
+
+.card--wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.payment--card {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.payment--card:hover {
+    transform: translateY(-5px);
+}
+
+.payment--card .card--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment--card .amount .title {
+    font-size: 14px;
+    color: #999;
+}
+
+.payment--card .amount .amount--value {
+    font-size: 20px;
+    color: #333;
+}
+
+.payment--card .icon {
+    font-size: 24px;
+    color: #064e03;
+}
+
+.payment--card .card-detail {
+    font-size: 16px;
+    color: #15ff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.light-red {
+    background: rgba(233, 82, 82, 0.1);
+}
+
+.light-green {
+    background: rgba(82, 219, 123, 0.1);
+}
+
+.light-blue {
+    background: rgba(82, 180, 219, 0.1);
+}
+
+.tabular--wrapper {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabular--wrapper .main-title {
+    color: #064e03;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #064e03;
+    color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tfoot {
+    background: #064e03;
+    color: #fff;
+}
+
+tfoot td {
+    padding: 15px;
+}
+
+.table-container button {
+    background: none;
+    border: none;
+    color: #064e03;
+    cursor: pointer;
+    transition: color 0.5s;
+    border-radius: 25px;
+}
+
+.table-container button:hover {
+    color: #ffffff;
+}
+
+/* Profile Section */
+.profile-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.profile-body {
+    margin-top: 20px;
+}
+
+.profile-body h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-settings-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-settings-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-settings-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.profile-settings-form button:hover {
+    background-color: #218838;
+}
+
+.profile-footer {
+    margin-top: 30px;
+}
+
+.profile-footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+}
+
+.activity-list li:last-child {
+    border-bottom: none;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(87, 85, 85, 0.5);
+    width: 97%;
+    max-width: 700px;
+    margin-left: 27%;
+}
+
+h1 {
+    text-align: center;
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #505050;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="file"] {
+    padding: 3px;
+    background-color:#f1f1f1 ;
+    color: #484848;
+    width: 97%;
+}
+
+button{
+    padding: 12px 10px;
+    font-size: 16px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 97%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #2d867a;
+}
+
+.fullName {
+    display: flex;
+    gap: 10px;
+}
+
+.fullName input {
+    width: 97%;
+}
+
+.address-details {
+    display: flex;
+    gap: 10px;
+}
+
+.address-details input,
+.address-details select {
+    width: 97%;
+}
+
+.employmentStatus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 97%;
+}
+
+.employmentStatus label {
+    margin-right: 10px;
+}
