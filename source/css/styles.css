@@ -322,6 +322,7 @@ header {
 }
 .details-button:hover, .see-details:hover {
     background-color: #05382e;
+    ;
 }
 a{
     text-decoration: none;
@@ -550,7 +551,6 @@ a{
     background-color: #002d4d;
 }
 
-
 .properties{
     background-color: #fff;
     padding-top: 10px;
@@ -681,6 +681,17 @@ a.card-link:hover::after {
 }
 
 
+.apply-button{
+    color: rgb(23, 99, 23);
+}
+.apply-button:hover{
+    color: white;
+}
+
+.svg{
+    padding-bottom: 10px;
+    margin-right: 8px;
+}
 
 @media (max-width: 768px) {
     header {
@@ -732,6 +743,19 @@ a.card-link:hover::after {
 
     .glide {
         max-width: 100%;
+    }
+
+    .row{
+        text-align: center;
+        background-color: white;
+
+    }
+
+    .apply-button{
+        color: rgb(23, 99, 23);
+    }
+    .apply-button:hover{
+        color: white;
     }
 }
 
