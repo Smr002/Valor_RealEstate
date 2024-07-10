@@ -6,10 +6,11 @@
     <title>Recruitment Application Form</title>
     <link rel="stylesheet" href="css/applyStyle.css">
     <link rel="icon" type="image/png" href="..\source\image\icon2.png">
+  
 </head>
 <body>
     <div class="form-container">
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
             <h1>Recruitment Application Form</h1>
             
             <label for="fullName">Full Name*</label>
@@ -34,7 +35,6 @@
                     <option value="" selected disabled>Country</option>
                     <option value="USA">USA</option>
                     <option value="Canada">Canada</option>
-              
                 </select>
             </div>
             
@@ -43,7 +43,6 @@
                 <option value="" selected disabled>Please Select</option>
                 <option value="Position 1">Position 1</option>
                 <option value="Position 2">Position 2</option>
-               
             </select>
             
             <label for="startDate">Available start date*</label>
@@ -69,7 +68,7 @@
             <label for="notes">Notes, Questions and Suggestions</label>
             <textarea id="notes" name="notes" rows="4" placeholder="Enter your message here..."></textarea>
             <div class="button-submit">
-                <label>Submit</label>
+                <button type="submit">Submit</button>
             </div>
          
             <br><br>
@@ -79,5 +78,37 @@
             
         </form>
     </div>
+    <script>
+        function validateForm() {
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const phonePattern = /^\+?[1-9]\d{1,14}$/;
+            const namePattern = /^[a-zA-Z\s]+$/;
+            
+            const email = document.getElementById('email').value;
+            const contactNumber = document.getElementById('contactNumber').value;
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            if(!namePattern.test(firstName)){
+                alert('Please enter a valid name');
+                return false;
+            }
+            if(!namePattern.test(lastName)){
+                alert('Please enter a valid name');
+                return false;
+            }
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            if (!phonePattern.test(contactNumber)) {
+                alert('Please enter a valid phone number.');
+                return false;
+            }
+        
+
+            return true;
+        }
+    </script>
 </body>
 </html>

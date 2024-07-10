@@ -52,11 +52,8 @@ input[type="file"] {
     width: 97%;
 }
 
-
-
-
-.button-submit {
-    padding: 10px 10px;
+button{
+    padding: 12px 10px;
     font-size: 16px;
     border: none;
     background: #27ae60;
@@ -64,11 +61,14 @@ input[type="file"] {
     border-radius: 15px;
     cursor: pointer;
     transition: background 0.3s ease;
-    width: 97%;
+    width: 100%;
     text-align: center;
 }
 
-.button-submit:hover {
+
+
+
+button:hover {
     background-color: #2d867a;
 }
 
