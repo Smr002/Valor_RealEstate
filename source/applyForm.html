@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruitment Application Form</title>
     <link rel="stylesheet" href="css/applyStyle.css">
+    <link rel="stylesheet" href="css/styles.css">   
     <link rel="icon" type="image/png" href="..\source\image\icon2.png">
   
 </head>
-<body>
+<header>
+    <div class="logo">
+        <img src="image/logo.png" alt="Property">
+    </div>
+    <ul class="nav-links">
+        <li><a href="../source/index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="../source/properties.html" class="dropbtn">Properties</a>
+            <div class="dropdown-content">
+                <a href="../source/coastal.html">Coastal Properties</a>
+                <a href="../source/mountain.html">Mountain Properties</a>
+                <a href="../source/urban.html">Urban Properties</a>
+            </div>
+        </li>
+        <li><a href="../source/blog.html">Blog</a></li>
+        <li><a href="../source/services.html">Services</a></li>
+        <li><a href="../source/about.html">About</a></li>
+        <li><a href="../source/contact.html">Contact</a></li>
+        <li><a href="../source/logIn.html">Log In</a></li>
+    </ul>
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</header>
+<body>  
+    <main>
     <div class="form-container">
         <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
             <h1>Recruitment Application Form</h1>
@@ -78,6 +106,51 @@
             
         </form>
     </div>
+</main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container" data-aos="fade-up" >
+            <div class="footer-section logo">
+                <img src="image/logo.png" alt="Valor Estate" style="max-width: 150px;">
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                <p>+1(123)-456-7890</p>
+                <p>+1(123)-456-7890</p>
+                <p>info@mydomain.com</p>
+            </div>
+            <div class="footer-section sources">
+                <h3>Sources</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <div class="social-icons"> 
+                    <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                    <a href="#"><i class="fab fa-twitter"></i></a> 
+                    <a href="#"><i class="fab fa-instagram"></i></a> 
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024.</p>
+        </div>
+    </footer>
+
     <script>
         function validateForm() {
             const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -110,5 +183,6 @@
             return true;
         }
     </script>
+    <script src="../source/scripts/script.js"></script>
 </body>
 </html>

@@ -176,6 +176,7 @@ header {
 
 .search-field label {
     margin-bottom: 5px;
+    margin-right: 50%;
     font-weight: bold;
 }
 
@@ -198,6 +199,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-top: 3%;
 }
 
 .search-button:hover {
@@ -528,28 +530,44 @@ a{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px auto; 
+    margin-bottom: 20%;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ccc; 
     font-size: 16px;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+    outline: none;
+    border-color: #064e06; 
+}
+
 .contact-form button {
-    padding: 10px;
-    background-color: #274c20;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    background-color: #064f45;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #002d4d;
+    background-color: #003b6e;
 }
+
 
 .properties{
     background-color: #fff;
@@ -559,7 +577,6 @@ a{
 .card{
     text-align: center;
 }
-
 
 
 .svg{
