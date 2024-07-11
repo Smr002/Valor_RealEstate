@@ -1,0 +1,347 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 95%;
+    background: #064f45;
+    padding: 20px 12px;
+    position: fixed;
+    top: 10px;
+    left: 2.5%;
+    right: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    overflow: hidden;
+    background-image: url("../image/aboutImg.jpg"); 
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5); /*Erresimi i backgroundit*/
+    background-position: center;
+    color: #ffffff; 
+}
+
+.banner {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.banner a {
+    text-decoration: none;
+    color: #FFFFFF80;
+}
+
+.banner h1{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.innerBanner .link{
+    color: white;
+}
+.innerBanner {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+}
+
+.container{
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.container h2{
+    color: #00204a;
+}
+
+.sub-heading{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.lead{
+    font-size: 14px;
+}
+
+.real-estate-agent {
+    border: 2px solid #064f45;
+    padding: 20px;
+    border-radius: 10px; 
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.agent-name{
+    font-size: 36px;
+}
+
+.carousel-container {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.carousel-inner img {
+    width: 300px;
+    height: 275px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease-in-out;
+}
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.property-details {
+    margin: 70px;
+    text-align: center;
+}
+
+.property-details table {
+    width: 85%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-left: 8%;
+}
+
+.property-details td, .property-details th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.property-details th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.property-details td:first-child {
+    width: 40%;
+    font-weight: bold;
+}
+
+.property-details td:last-child {
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #064f45;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .lead{
+        text-align: center;
+    }
+
+    .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .lead{
+        text-align: center;
+    }
+    
+    .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+footer {
+    background-color:  #064f45;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: lightgray;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f1c40f;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}

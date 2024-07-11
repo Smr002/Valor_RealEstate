@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Application Form</title>
+    <link rel="stylesheet" href="css/applyStyle.css">
+    <link rel="stylesheet" href="css/styles.css">   
+    <link rel="icon" type="image/png" href="..\source\image\icon2.png">
+  
+</head>
+<header>
+    <div class="logo">
+        <img src="image/logo.png" alt="Property">
+    </div>
+    <ul class="nav-links">
+        <li><a href="../source/index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="../source/properties.html" class="dropbtn">Properties</a>
+            <div class="dropdown-content">
+                <a href="../source/coastal.html">Coastal Properties</a>
+                <a href="../source/mountain.html">Mountain Properties</a>
+                <a href="../source/urban.html">Urban Properties</a>
+            </div>
+        </li>
+        <li><a href="../source/blog.html">Blog</a></li>
+        <li><a href="../source/services.html">Services</a></li>
+        <li><a href="../source/about.html">About</a></li>
+        <li><a href="../source/contact.html">Contact</a></li>
+        <li><a href="../source/logIn.html">Log In</a></li>
+    </ul>
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</header>
+<body>  
+    <main>
+    <div class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <h1>Recruitment Application Form</h1>
+            
+            <label for="fullName">Full Name*</label>
+            <div class="fullName">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            </div>
+            
+            <label for="email">E-Mail*</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            
+            <label for="contactNumber">Contact Number*</label>
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="+1234567890" required>
+            
+            <label for="address">Address</label>
+            <input type="text" id="streetAddress" name="streetAddress" placeholder="Street Address">
+            <div class="address-details">
+                <input type="text" id="city" name="city" placeholder="City">
+                <input type="text" id="state" name="state" placeholder="State">
+                <input type="text" id="postalCode" name="postalCode" placeholder="Postal Code">
+                <select id="country" name="country">
+                    <option value="" selected disabled>Country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </div>
+            
+            <label for="position">What position are you applying for?</label>
+            <select id="position" name="position" required>
+                <option value="" selected disabled>Please Select</option>
+                <option value="Position 1">Position 1</option>
+                <option value="Position 2">Position 2</option>
+            </select>
+            
+            <label for="startDate">Available start date*</label>
+            <input type="date" id="startDate" name="startDate" required>
+            
+            <label for="employmentStatus">What is your current employment status?*</label>
+            <div class="employmentStatus">
+                <input type="radio" id="employed" name="employmentStatus" value="Employed" required>
+                <label for="employed">Employed</label>
+                <input type="radio" id="unemployed" name="employmentStatus" value="Unemployed">
+                <label for="unemployed">Unemployed</label>
+                <input type="radio" id="selfEmployed" name="employmentStatus" value="SelfEmployed">
+                <label for="selfEmployed">Self-Employed</label>
+                <input type="radio" id="student" name="employmentStatus" value="Student">
+                <label for="student">Student</label>
+                <input type="radio" id="other" name="employmentStatus" value="Other">
+                <label for="other">Other</label>
+            </div>
+            
+            <label for="resume">Upload Your Resume</label>
+            <input type="file" id="resume" name="resume" accept=".doc, .docx, .pdf" required>
+            
+            <label for="notes">Notes, Questions and Suggestions</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Enter your message here..."></textarea>
+            <div class="button-submit">
+                <button type="submit">Submit</button>
+            </div>
+         
+            <br><br>
+            <div class="button-cancel">
+               <label><a href="../source/index.html">Cancel</a></label>
+            </div>
+            
+        </form>
+    </div>
+</main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container" data-aos="fade-up" >
+            <div class="footer-section logo">
+                <img src="image/logo.png" alt="Valor Estate" style="max-width: 150px;">
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                <p>+1(123)-456-7890</p>
+                <p>+1(123)-456-7890</p>
+                <p>info@mydomain.com</p>
+            </div>
+            <div class="footer-section sources">
+                <h3>Sources</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <div class="social-icons"> 
+                    <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                    <a href="#"><i class="fab fa-twitter"></i></a> 
+                    <a href="#"><i class="fab fa-instagram"></i></a> 
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024.</p>
+        </div>
+    </footer>
+
+    <script>
+        function validateForm() {
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const phonePattern = /^\+?[1-9]\d{1,14}$/;
+            const namePattern = /^[a-zA-Z\s]+$/;
+            
+            const email = document.getElementById('email').value;
+            const contactNumber = document.getElementById('contactNumber').value;
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            if(!namePattern.test(firstName)){
+                alert('Please enter a valid name');
+                return false;
+            }
+            if(!namePattern.test(lastName)){
+                alert('Please enter a valid name');
+                return false;
+            }
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            if (!phonePattern.test(contactNumber)) {
+                alert('Please enter a valid phone number.');
+                return false;
+            }
+        
+
+            return true;
+        }
+    </script>
+    <script src="../source/scripts/script.js"></script>
+</body>
+</html>
