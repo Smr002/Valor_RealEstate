@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const logo = document.querySelector('.footer-section.logo img');
     if (logo) {
         logo.addEventListener('click', () => {
-            window.location.href = "../source/index.html";
+            window.location.href = "../index.html";
 
         });
     }
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const logo1 = document.querySelector('.logo img');
     if (logo1) {
         logo1.addEventListener('click', () => {
-            window.location.href = "../source/index.html";
+            window.location.href = "../index.html";
 
         });
     }
