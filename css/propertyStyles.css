@@ -169,11 +169,6 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-.property-details th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-
 .property-details td:first-child {
     width: 40%;
     font-weight: bold;
