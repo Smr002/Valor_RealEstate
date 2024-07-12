@@ -15,7 +15,7 @@ function changeBackgroundImage() {
     currentIndex = (currentIndex + 1) % images.length;
 }
 
-setInterval(changeBackgroundImage, 1000);
+setInterval(changeBackgroundImage, 2500);
 
 document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.querySelector(".hamburger");
